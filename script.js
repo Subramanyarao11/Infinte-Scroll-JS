@@ -32,7 +32,6 @@ function displayPhotos() {
       alt: photo.alt_description,
       title: photo.alt_description,
     });
-    // Put <img> inside <a>, then put both inside imageContainer Element
     item.appendChild(img);
     imageContainer.appendChild(item);
   });
@@ -47,6 +46,7 @@ async function getPhotos() {
     displayPhotos();
   } catch (error) {
     // Catch Error Here
+    console.log(error)
   }
 }
 
